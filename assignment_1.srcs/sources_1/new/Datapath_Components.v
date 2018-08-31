@@ -54,3 +54,122 @@ module ADD #(parameter DATAWIDTH = 2)(a, b, sum);
     end
 endmodule
 
+//Subtractor
+//DataIn(a,b)
+//CtrlIn()
+//DataOut(diff)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module SUB #(parameter DATAWIDTH = 2)(a, b, diff);
+    input [DATAWIDTH-1:0] a, b;
+    output reg [DATAWIDTH-1:0] diff;
+    
+    always @(a, b) begin
+        diff <= a - b; //subtract a and b        
+    end
+endmodule
+
+
+//Multiplier
+//DataIn(a,b)
+//CtrlIn()
+//DataOut(prod)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module MUL #(parameter DATAWIDTH = 2)(a, b, prod);
+    input [DATAWIDTH-1:0] a, b;
+    output reg [DATAWIDTH-1:0] prod;
+    
+    always @(a, b) begin
+        prod <= a * b; //multiply a and b
+    end
+endmodule
+
+
+//Comparator
+//DataIn(a,b)
+//CtrlIn()
+//DataOut()
+//CtrlOut(gt, lt, eq)
+//Parameter(DATAWIDTH)
+module COMP #(parameter DATAWIDTH = 2)(a, b, gt, lt, eq);
+    input [DATAWIDTH-1:0] a, b;
+    output reg gt, lt, eq;
+    
+    always @(a, b) begin
+        if(a > b) begin
+            gt <= 1; lt <= 0; eq <= 0;
+        end
+        else if(a < b) begin
+            gt <= 1; lt <= 0; eq <= 0;
+        end
+        else begin
+            gt <= 0; lt <= 0; eq <= 1;
+        end
+    end
+endmodule
+
+
+//Multiplexor 2x1
+//DataIn(a,b)
+//CtrlIn(sel)
+//DataOut(d)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module MUX2x1 #(parameter DATAWIDTH = 2)(a, b, sel, d);
+    input [DATAWIDTH-1:0] a, b;
+    input sel;
+    output reg [DATAWIDTH-1:0] d;
+    
+    always @(a, b, sel) begin
+        if(sel == 0) begin
+            d <= a;
+        end
+        else begin
+            d <= b;
+        end
+    end
+endmodule
+
+
+
+//Logical shift right
+//DataIn(a)
+//CtrlIn(sh_amt)
+//DataOut(d)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module SHR #(parameter DATAWIDTH = 2)(a, sh_amt, d);
+    input [DATAWIDTH-1:0] a;
+    input [DATAWIDTH-1:0] sh_amt; //can be optimized?
+    output reg [DATAWIDTH-1:0] d;
+    
+    always @(a, sh_amt) begin
+        d <= a >> sh_amt;
+    end
+endmodule
+
+
+//Logical shift left
+//DataIn(a)
+//CtrlIn(sh_amt)
+//DataOut(d)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module SHL #(parameter DATAWIDTH = 2)(a, sh_amt, d);
+    input [DATAWIDTH-1:0] a;
+    input [DATAWIDTH-1:0] sh_amt; //can be optimized?
+    output reg [DATAWIDTH-1:0] d;
+    
+    always @(a, sh_amt) begin
+        d <= a << sh_amt;
+    end
+endmodule
+
+
+
+
+
+
+
+

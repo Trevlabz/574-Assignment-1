@@ -1,1 +1,1 @@
-# 574-Assignment-1
+# ECE 574 Assignment-1
