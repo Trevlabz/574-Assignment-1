@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535691939">
-  <File Type="PA-TCL" Name="REG.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="REG_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="REG_reports.tcl"/>
-  <File Type="RDS-RDS" Name="REG.vds"/>
-  <File Type="RDS-UTIL" Name="REG_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="REG_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="REG.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="REG_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="REG_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1535698533">
+  <File Type="PA-TCL" Name="MUX2x1.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="MUX2x1_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="MUX2x1_reports.tcl"/>
+  <File Type="RDS-RDS" Name="MUX2x1.vds"/>
+  <File Type="RDS-UTIL" Name="MUX2x1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="MUX2x1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="MUX2x1.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="MUX2x1_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="MUX2x1_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Datapath_Components.v">
@@ -20,8 +20,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="REG"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="MUX2x1"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

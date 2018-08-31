@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log REG.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source REG.tcl
+EAStep vivado -log MUX2x1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MUX2x1.tcl
