@@ -1,1 +1,13 @@
 ComponentName : Latency2bit Latency8bit Latency16bit Latency32bit Latency64bit
+REG : 4.090 4.090 4.090 4.090 4.090
+ADD : 5.361 6.384 6.618 7.086 8.022
+SUB : 5.361 6.384 6.618 7.086 8.022
+MUL : 
+COMP : 5.361 6.820 6.937 7.171 7.639
+MUX2x1 : 5.361 5.361 5.361 5.361 5.361
+SHR : 
+SHL : 
+DIV : 
+MOD : 
+INC : 
+DEC : 

@@ -24,7 +24,7 @@
 //DataOut()
 //CtrlOut(gt, lt, eq)
 //Parameter(DATAWIDTH)
-module COMP #(parameter DATAWIDTH = 2)(a, b, gt, lt, eq);
+module COMP #(parameter DATAWIDTH = 64)(a, b, gt, lt, eq);
     input [DATAWIDTH-1:0] a, b;
     output reg gt, lt, eq;
     

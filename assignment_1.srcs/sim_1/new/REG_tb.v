@@ -28,6 +28,10 @@ module REG_tb( );
     reg Clk, Rst;
         
     REG #(.DATALENGTH(2)) REG2(d, Clk, Rst, q);
+//    REG #(.DATALENGTH(8)) REG8(d, Clk, Rst, q);
+//    REG #(.DATALENGTH(16)) REG16(d, Clk, Rst, q);
+//    REG #(.DATALENGTH(32)) REG32(d, Clk, Rst, q);
+//    REG #(.DATALENGTH(64)) REG64(d, Clk, Rst, q);
     
     always
         #10 Clk <= ~Clk;

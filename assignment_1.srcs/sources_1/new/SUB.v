@@ -25,7 +25,7 @@
 //DataOut(diff)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module SUB #(parameter DATAWIDTH = 2)(a, b, diff);
+module SUB #(parameter DATAWIDTH = 64)(a, b, diff);
     input [DATAWIDTH-1:0] a, b;
     output reg [DATAWIDTH-1:0] diff;
     
@@ -33,8 +33,3 @@ module SUB #(parameter DATAWIDTH = 2)(a, b, diff);
         diff <= a - b; //subtract a and b        
     end
 endmodule
-
-
-
-
-

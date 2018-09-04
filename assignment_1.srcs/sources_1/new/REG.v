@@ -25,7 +25,7 @@
 //DataOut(q)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module REG #(parameter DATAWIDTH = 2)(d, Clk, Rst, q);
+module REG #(parameter DATAWIDTH = 64)(d, Clk, Rst, q);
     input [DATAWIDTH-1:0] d;
     input Clk, Rst;
     output reg [DATAWIDTH-1:0] q;

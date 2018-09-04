@@ -25,7 +25,7 @@
 //DataOut(d)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module MUX2x1 #(parameter DATAWIDTH = 2)(a, b, sel, d);
+module MUX2x1 #(parameter DATAWIDTH = 64)(a, b, sel, d);
     input [DATAWIDTH-1:0] a, b;
     input sel;
     output reg [DATAWIDTH-1:0] d;

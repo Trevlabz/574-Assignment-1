@@ -24,11 +24,11 @@
 //DataOut(sum)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module ADD #(parameter DATAWIDTH = 2)(a, b, sum);
+module ADD #(parameter DATAWIDTH = 64)(a, b, sum);
     input [DATAWIDTH-1:0] a, b;
     output reg [DATAWIDTH-1:0] sum;
     
     always @(a, b) begin
-        sum <= a + b; //add a and b        
+        sum <= a + b; //add a and b
     end
 endmodule
