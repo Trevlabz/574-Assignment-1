@@ -18,8 +18,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module MOD(
-
-    );
+//MOD               
+//DataIn(a,b)
+//CtrlIn()
+//DataOut(rem)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module MOD #(parameter DATAWIDTH = 2)(a, b, rem);
+    input [DATAWIDTH - 1:0] a, b;
+    output reg [DATAWIDTH - 1:0] rem;
+    
+    always @(a, b) begin
+        rem <= a % b;   //remainder of a/b
+    end
 endmodule

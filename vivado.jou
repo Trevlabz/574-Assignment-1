@@ -1,0 +1,177 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep  3 22:24:01 2018
+# Process ID: 2044
+# Current directory: C:/Users/trevl/Documents/GitHub/Assignment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3492 C:\Users\trevl\Documents\GitHub\Assignment_1\assignment_1.xpr
+# Log file: C:/Users/trevl/Documents/GitHub/Assignment_1/vivado.log
+# Journal file: C:/Users/trevl/Documents/GitHub/Assignment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/Components_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/Components_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/REG_tb.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHR_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHR_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHL_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHL_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUX2x1_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUX2x1_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+source ADD_tb.tcl
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ADD [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+source ADD_tb.tcl
+restart
+run 100 ns
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SUB_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source SUB_tb.tcl
+restart
+run 100 ns
+close_sim
+launch_simulation
+source SUB_tb.tcl
+restart
+run 100 ns
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUL_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source MUL_tb.tcl
+restart
+run 100 ns
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top COMP_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source COMP_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MUX2x1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source MUX2x1_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SHR_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source SHR_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top SHL_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source SHL_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DIV_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source DIV_tb.tcl
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top MOD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source MOD_tb.tcl
+relaunch_sim
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top INC_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source INC_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top DEC_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source DEC_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top REG_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1

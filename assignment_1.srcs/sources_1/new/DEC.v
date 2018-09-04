@@ -18,8 +18,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module DEC(
-
-    );
+//DEC               
+//DataIn(a)
+//CtrlIn()
+//DataOut(d)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module DEC #(parameter DATAWIDTH = 2)(a, d);
+    input [DATAWIDTH - 1:0] a;
+    output reg [DATAWIDTH - 1:0] d;
+    
+    always @(a) begin
+        d <= a - 1; //decrement a
+    end
 endmodule

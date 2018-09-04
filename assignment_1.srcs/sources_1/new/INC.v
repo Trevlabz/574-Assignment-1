@@ -18,8 +18,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module INC(
-
-    );
+//INC               
+//DataIn(a)
+//CtrlIn()
+//DataOut(d)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module INC #(parameter DATAWIDTH = 2)(a, d);
+    input [DATAWIDTH - 1:0] a;
+    output reg [DATAWIDTH - 1:0] d;
+    
+    always @(a) begin
+        d <= a + 1; //increment a
+    end
 endmodule

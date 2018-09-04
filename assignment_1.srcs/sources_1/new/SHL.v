@@ -27,11 +27,11 @@
 //Parameter(DATAWIDTH)
 module SHL #(parameter DATAWIDTH = 2)(a, sh_amt, d);
     input [DATAWIDTH-1:0] a;
-    input [DATAWIDTH-1:0] sh_amt; //can be optimized?
+    input [DATAWIDTH-1:0] sh_amt; 
     output reg [DATAWIDTH-1:0] d;
     
     always @(a, sh_amt) begin
-        d <= a << sh_amt;
+        d <= a << sh_amt;   //shift left sh_amt ammount
     end
 endmodule
 

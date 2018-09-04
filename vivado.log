@@ -1,0 +1,1008 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Sep  3 22:24:01 2018
+# Process ID: 2044
+# Current directory: C:/Users/trevl/Documents/GitHub/Assignment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3492 C:\Users\trevl\Documents\GitHub\Assignment_1\assignment_1.xpr
+# Log file: C:/Users/trevl/Documents/GitHub/Assignment_1/vivado.log
+# Journal file: C:/Users/trevl/Documents/GitHub/Assignment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/Components_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/Components_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/REG_tb.v
+update_compile_order -fileset sim_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHR_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHR_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHL_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHL_tb.v
+close [ open C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUX2x1_tb.v w ]
+add_files -fileset sim_1 C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUX2x1_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ADD_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/ADD_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module ADD does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/ADD_tb.v:29]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ADD
+Compiling module xil_defaultlib.ADD_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ADD_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/ADD_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/ADD_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 22:37:57 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 22:37:57 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 893.754 ; gain = 0.000
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1421.262 ; gain = 400.473
+report_timing_summary -delay_type max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top ADD [current_fileset]
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ADD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ADD_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ADD_tb_behav xil_defaultlib.ADD_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module ADD does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/ADD_tb.v:29]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ADD_tb_behav -key {Behavioral:sim_1:Functional:ADD_tb} -tclbatch {ADD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source ADD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ADD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top SUB_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SUB_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SUB_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SUB_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SUB_tb_behav xil_defaultlib.SUB_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module SUB does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v:27]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port diff [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.SUB_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SUB_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SUB_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SUB_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:25:43 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:25:43 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SUB_tb_behav -key {Behavioral:sim_1:Functional:SUB_tb} -tclbatch {SUB_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source SUB_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SUB_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SUB_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SUB_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SUB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SUB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SUB_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SUB_tb_behav xil_defaultlib.SUB_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module SUB does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SUB_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SUB
+Compiling module xil_defaultlib.SUB_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SUB_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SUB_tb_behav -key {Behavioral:sim_1:Functional:SUB_tb} -tclbatch {SUB_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source SUB_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SUB_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top MUL_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MUL_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MUL_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUL_tb_behav xil_defaultlib.MUL_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module MUL does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v:27]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port prod [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUL_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MUL_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MUL_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MUL_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:27:59 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:27:59 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUL_tb_behav -key {Behavioral:sim_1:Functional:MUL_tb} -tclbatch {MUL_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source MUL_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUL_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 100 ns
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MUL_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MUL_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MUL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUL_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUL_tb_behav xil_defaultlib.MUL_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module MUL does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUL_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.MUL_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MUL_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top COMP_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'COMP_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj COMP_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/COMP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMP
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module COMP_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot COMP_tb_behav xil_defaultlib.COMP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module COMP does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/COMP_tb.v:28]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.COMP
+Compiling module xil_defaultlib.COMP_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot COMP_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/COMP_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/COMP_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:30:54 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:30:54 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "COMP_tb_behav -key {Behavioral:sim_1:Functional:COMP_tb} -tclbatch {COMP_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source COMP_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'COMP_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top MUX2x1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MUX2x1_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MUX2x1_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MUX2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MUX2x1_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX2x1_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MUX2x1_tb_behav xil_defaultlib.MUX2x1_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX2x1
+Compiling module xil_defaultlib.MUX2x1_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MUX2x1_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MUX2x1_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MUX2x1_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:32:23 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:32:23 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MUX2x1_tb_behav -key {Behavioral:sim_1:Functional:MUX2x1_tb} -tclbatch {MUX2x1_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source MUX2x1_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MUX2x1_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top SHR_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SHR_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SHR_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SHR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHR_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHR_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SHR_tb_behav xil_defaultlib.SHR_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SHR
+Compiling module xil_defaultlib.SHR_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SHR_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SHR_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SHR_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:34:57 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:34:57 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SHR_tb_behav -key {Behavioral:sim_1:Functional:SHR_tb} -tclbatch {SHR_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source SHR_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SHR_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top SHL_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SHL_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SHL_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SHL.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHL
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/SHL_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHL_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SHL_tb_behav xil_defaultlib.SHL_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SHL
+Compiling module xil_defaultlib.SHL_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SHL_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SHL_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/SHL_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:36:50 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:36:50 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SHL_tb_behav -key {Behavioral:sim_1:Functional:SHL_tb} -tclbatch {SHL_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source SHL_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SHL_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top DIV_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DIV_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DIV_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DIV_tb_behav xil_defaultlib.DIV_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module DIV does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v:27]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port quot [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.DIV_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DIV_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/DIV_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/DIV_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:37:34 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:37:34 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DIV_tb_behav -key {Behavioral:sim_1:Functional:DIV_tb} -tclbatch {DIV_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source DIV_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DIV_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DIV_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DIV_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/DIV.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DIV_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DIV_tb_behav xil_defaultlib.DIV_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module DIV does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DIV_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.DIV_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DIV_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top MOD_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MOD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MOD_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MOD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MOD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MOD_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MOD_tb_behav xil_defaultlib.MOD_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module MOD does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v:27]
+WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 2 for port rem [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MOD
+Compiling module xil_defaultlib.MOD_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MOD_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MOD_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/MOD_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:39:08 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:39:08 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "MOD_tb_behav -key {Behavioral:sim_1:Functional:MOD_tb} -tclbatch {MOD_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source MOD_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'MOD_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'MOD_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj MOD_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MOD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MOD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MOD_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot MOD_tb_behav xil_defaultlib.MOD_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module MOD does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/MOD_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MOD
+Compiling module xil_defaultlib.MOD_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot MOD_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top INC_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'INC_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj INC_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/INC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module INC_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot INC_tb_behav xil_defaultlib.INC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module INC does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/INC_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.INC
+Compiling module xil_defaultlib.INC_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot INC_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/INC_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/INC_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:41:05 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:41:05 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "INC_tb_behav -key {Behavioral:sim_1:Functional:INC_tb} -tclbatch {INC_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source INC_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'INC_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top DEC_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'DEC_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj DEC_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/DEC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DEC_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DEC_tb_behav xil_defaultlib.DEC_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2534] module DEC does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.DEC
+Compiling module xil_defaultlib.DEC_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot DEC_tb_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/DEC_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim/xsim.dir/DEC_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Sep  3 23:42:16 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Sep  3 23:42:16 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "DEC_tb_behav -key {Behavioral:sim_1:Functional:DEC_tb} -tclbatch {DEC_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source DEC_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'DEC_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1930.398 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top REG_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  3 23:42:52 2018...

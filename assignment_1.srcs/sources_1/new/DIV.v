@@ -18,8 +18,17 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module DIV(
-
-    );
+//DIV
+//DataIn(a,b)
+//CtrlIn()
+//DataOut(quot)
+//CtrlOut()
+//Parameter(DATAWIDTH)
+module DIV #(parameter DATAWIDTH = 2)(a, b, quot);
+    input [DATAWIDTH - 1:0] a, b;
+    output reg [DATAWIDTH - 1:0] quot;
+    
+    always @(a, b) begin
+        quot <= a / b;  //divide a by b
+    end
 endmodule
