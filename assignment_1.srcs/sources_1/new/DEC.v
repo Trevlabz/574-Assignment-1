@@ -24,7 +24,7 @@
 //DataOut(d)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module DEC #(parameter DATAWIDTH = 2)(a, d);
+module DEC #(parameter DATAWIDTH = 64)(a, d);
     input [DATAWIDTH - 1:0] a;
     output reg [DATAWIDTH - 1:0] d;
     

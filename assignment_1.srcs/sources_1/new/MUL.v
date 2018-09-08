@@ -16,7 +16,7 @@
 // Revision 0.01 - File Created
 // Additional Comments:
 // 
-//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////// //////////////////////////////////////////////////
 
 
 //Multiplier
@@ -25,7 +25,7 @@
 //DataOut(prod)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module MUL #(parameter DATAWIDTH = 2)(a, b, prod);
+module MUL #(parameter DATAWIDTH = 32)(a, b, prod);
     input [DATAWIDTH-1:0] a, b;
     output reg [DATAWIDTH-1:0] prod;
     

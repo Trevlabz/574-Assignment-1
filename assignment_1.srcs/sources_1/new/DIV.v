@@ -24,7 +24,7 @@
 //DataOut(quot)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module DIV #(parameter DATAWIDTH = 2)(a, b, quot);
+module DIV #(parameter DATAWIDTH = 64)(a, b, quot);
     input [DATAWIDTH - 1:0] a, b;
     output reg [DATAWIDTH - 1:0] quot;
     

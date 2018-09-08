@@ -24,7 +24,7 @@
 //DataOut(rem)
 //CtrlOut()
 //Parameter(DATAWIDTH)
-module MOD #(parameter DATAWIDTH = 2)(a, b, rem);
+module MOD #(parameter DATAWIDTH = 64)(a, b, rem);
     input [DATAWIDTH - 1:0] a, b;
     output reg [DATAWIDTH - 1:0] rem;
     
