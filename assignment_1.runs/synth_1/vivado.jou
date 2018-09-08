@@ -2,11 +2,11 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Sep  7 23:33:31 2018
-# Process ID: 9820
+# Start of session at: Sat Sep  8 01:46:18 2018
+# Process ID: 1616
 # Current directory: C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.runs/synth_1
-# Command line: vivado.exe -log DEC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DEC.tcl
-# Log file: C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.runs/synth_1/DEC.vds
+# Command line: vivado.exe -log circuit1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source circuit1.tcl
+# Log file: C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.runs/synth_1/circuit1.vds
 # Journal file: C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source DEC.tcl -notrace
+source circuit1.tcl -notrace
