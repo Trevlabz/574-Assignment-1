@@ -42,6 +42,11 @@ read_verilog -library xil_defaultlib {
   C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SHR.v
   C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SUB.v
   C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit1.v
+  C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit2.v
+  C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit3.v
+  C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit4.v
+  C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit5.v
+  C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit6.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,12 +59,12 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top circuit1 -part xc7a100tcsg324-1
+synth_design -top circuit6 -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef circuit1.dcp
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file circuit1_utilization_synth.rpt -pb circuit1_utilization_synth.pb"
+write_checkpoint -force -noxdef circuit6.dcp
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file circuit6_utilization_synth.rpt -pb circuit6_utilization_synth.pb"
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
