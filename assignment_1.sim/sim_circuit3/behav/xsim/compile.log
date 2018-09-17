@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_circuit3/new/circuit3_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circuit3_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/SHR.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHR
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module circuit3
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/ADD.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ADD
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/REG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_circuit3/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

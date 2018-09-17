@@ -1,14 +1,13 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot DEC_tb_behav xil_defaultlib.DEC_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 6cc628916dfe413fa57b2811f20dc758 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot COMP_tb_behav xil_defaultlib.COMP_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-2534] module DEC does not have a parameter named DATALENGTH [C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_1/new/DEC_tb.v:27]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.DEC
-Compiling module xil_defaultlib.DEC_tb
+Compiling module xil_defaultlib.COMP(DATAWIDTH=4)
+Compiling module xil_defaultlib.COMP_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot DEC_tb_behav
+Built simulation snapshot COMP_tb_behav

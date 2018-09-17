@@ -25,7 +25,7 @@ module COMP_tb();
     reg [1:0] a, b;
     wire gt, lt, eq;
     
-    COMP #(.DATALENGTH(2)) COMP2(a, b, gt, lt, eq);
+    COMP #(.DATAWIDTH(4)) COMP2({2'b00,a}, {2'b00,b}, gt, lt, eq);
     
     
     initial begin

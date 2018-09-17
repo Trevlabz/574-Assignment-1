@@ -29,18 +29,17 @@ module circuit4(Clk, Rst, a, b, c, z, x);
     wire dLTe, dEQe;
     wire [63:0] xrin, zrin;
     wire [63:0] greg, hreg;
-    //reg [63:0] greg, hreg;
     
     ADD #(.DATAWIDTH(64)) ADD1(a, b, d);                //d = a+b
     ADD #(.DATAWIDTH(64)) ADD2(a, c, e);                //e = a+c
     SUB #(.DATAWIDTH(64)) SUB1(a, b, f);                //f = a-b
     COMP #(.DATAWIDTH(64)) COMP1(d, e, , dLTe, dEQe);   //dEQe = d == e; dLTe = d < e
-    MUX2x1 #(.DATAWIDTH(64)) MUX1(d, e, dLTe, g);       //g = dLTe ? d : e 
-    MUX2x1 #(.DATAWIDTH(64)) MUX2(g, f, dEQe, h);       //h = dEQe ? g : f 
+    MUX2x1 #(.DATAWIDTH(64)) MUX1(e, d, dLTe, g);       //g = dLTe ? d : e 
+    MUX2x1 #(.DATAWIDTH(64)) MUX2(f, g, dEQe, h);       //h = dEQe ? g : f 
     REG #(.DATAWIDTH(64)) REG1(g, Clk, Rst, greg);      //greg = g
     REG #(.DATAWIDTH(64)) REG2(h, Clk, Rst, hreg);      //hreg = h
-    SHL #(.DATAWIDTH(64)) SHL1(hreg, dLTe, xrin);       //xrin = hreg << dLTe
-    SHR #(.DATAWIDTH(64)) SHR1(greg, dEQe, zrin);       //zrin = greg >> dEQe
+    SHL #(.DATAWIDTH(64)) SHL1(hreg, {15'h000000000000000,3'b000,dLTe}, xrin);       //xrin = hreg << dLTe
+    SHR #(.DATAWIDTH(64)) SHR1(greg, {15'h000000000000000,3'b000,dEQe}, zrin);       //zrin = greg >> dEQe
     REG #(.DATAWIDTH(64)) REG3(xrin, Clk, Rst, x);      //x = xrin
     REG #(.DATAWIDTH(64)) REG4(zrin, Clk, Rst, z);      //z = zrin
 

@@ -33,10 +33,10 @@ module circuit2(Clk, Rst, a, b, c, z, x);
     ADD #(.DATAWIDTH(32)) ADD2(a, c, e);                //e = a+c
     SUB #(.DATAWIDTH(32)) SUB1(a, b, f);                //f = a-c
     COMP #(.DATAWIDTH(32)) COMP1(d, e, ,dLTe, dEQe);    //dEqe = d==e; dLTe = d<e
-    MUX2x1 #(.DATAWIDTH(32)) MUX1(d, e, dLTe, g);       //g = dLTe ? d : e
-    MUX2x1 #(.DATAWIDTH(32)) MUX2(g, f, dEQe, h);       //h = dEQe ? g : f
-    SHL #(.DATAWIDTH(32)) SHL1(g, dLTe, xwire);         //xwire = g<<dLTe
-    SHR #(.DATAWIDTH(32)) SHR1(h, dEQe, zwire);         //zwire = h>>dEQe
+    MUX2x1 #(.DATAWIDTH(32)) MUX1(e, d, dLTe, g);       //g = dLTe ? d : e
+    MUX2x1 #(.DATAWIDTH(32)) MUX2(f, g, dEQe, h);       //h = dEQe ? g : f
+    SHL #(.DATAWIDTH(32)) SHL1(g, {31'b0000000000000000000000000000000, dLTe}, xwire);         //xwire = g<<dLTe
+    SHR #(.DATAWIDTH(32)) SHR1(h, {31'b0000000000000000000000000000000, dEQe}, zwire);         //zwire = h>>dEQe
     REG #(.DATAWIDTH(32)) REG1(xwire, Clk, Rst, x);     //x = xwire
     REG #(.DATAWIDTH(32)) REG2(zwire, Clk, Rst, z);     //z = zwire
     

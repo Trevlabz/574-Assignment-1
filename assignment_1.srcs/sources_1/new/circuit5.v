@@ -32,7 +32,7 @@ module circuit5(Clk, Rst, a, b, c, d, zero, z);
     DIV #(.DATAWIDTH(64)) DIV2(c, d, f);                //f = c / d
     MOD #(.DATAWIDTH(64)) MOD1(a, b, g);                //g = a % b  
     COMP #(.DATAWIDTH(64)) COMP1(g, zero, , ,gEQz);     //gEQz = g == zero
-    MUX2x1 #(.DATAWIDTH(64)) MUX1(e, f, gEQz, zwire);   //zwire = gEQz ? e : f
+    MUX2x1 #(.DATAWIDTH(64)) MUX1(f, e, gEQz, zwire);   //zwire = gEQz ? e : f
     REG #(.DATAWIDTH(64)) REG1(zwire, Clk, Rst, z);     //z = zwire
             
 endmodule

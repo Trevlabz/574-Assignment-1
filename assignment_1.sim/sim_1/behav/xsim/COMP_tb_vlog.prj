@@ -1,7 +1,35 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
+"../../../../assignment_1.srcs/sources_1/new/ADD.v" \
 "../../../../assignment_1.srcs/sources_1/new/COMP.v" \
+"../../../../assignment_1.srcs/sources_1/new/DEC.v" \
+"../../../../assignment_1.srcs/sources_1/new/DIV.v" \
+"../../../../assignment_1.srcs/sources_1/new/INC.v" \
+"../../../../assignment_1.srcs/sources_1/new/MOD.v" \
+"../../../../assignment_1.srcs/sources_1/new/MUL.v" \
+"../../../../assignment_1.srcs/sources_1/new/MUX2x1.v" \
+"../../../../assignment_1.srcs/sources_1/new/REG.v" \
+"../../../../assignment_1.srcs/sources_1/new/SHL.v" \
+"../../../../assignment_1.srcs/sources_1/new/SHR.v" \
+"../../../../assignment_1.srcs/sources_1/new/SUB.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit1.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit2.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit3.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit4.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit5.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit6.v" \
+"../../../../assignment_1.srcs/sim_1/new/REG_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/DEC_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/INC_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/MOD_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/DIV_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/SHL_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/SHR_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/MUX2x1_tb.v" \
 "../../../../assignment_1.srcs/sim_1/new/COMP_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/MUL_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/SUB_tb.v" \
+"../../../../assignment_1.srcs/sim_1/new/ADD_tb.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

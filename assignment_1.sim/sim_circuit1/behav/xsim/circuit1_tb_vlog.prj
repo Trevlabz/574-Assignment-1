@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../assignment_1.srcs/sim_circuit1/new/circuit1_tb.v" \
+"../../../../assignment_1.srcs/sources_1/new/circuit1.v" \
+"../../../../assignment_1.srcs/sources_1/new/SUB.v" \
+"../../../../assignment_1.srcs/sources_1/new/ADD.v" \
+"../../../../assignment_1.srcs/sources_1/new/MUX2x1.v" \
+"../../../../assignment_1.srcs/sources_1/new/COMP.v" \
+"../../../../assignment_1.srcs/sources_1/new/MUL.v" \
+"../../../../assignment_1.srcs/sources_1/new/REG.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

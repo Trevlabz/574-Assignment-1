@@ -32,10 +32,10 @@ module circuit1(Clk, Rst, a, b, c, z, x);
     
     ADD #(.DATAWIDTH(8)) ADD1(a, b, d);
     ADD #(.DATAWIDTH(8)) ADD2(a, c, e);
-    COMP #(.DATAWIDTH(16)) COMP1(d, e, , g[0],);
-    MUX2x1 #(.DATAWIDTH(8)) MUX1(d, e, g[0], z);
-    MUL #(.DATAWIDTH(16)) MUL1({2'h00,a}, {2'h00,c}, f);
-    SUB #(.DATAWIDTH(16)) SUB1(f, {2'h00,d}, xwire);
+    COMP #(.DATAWIDTH(8)) COMP1(d, e, g[0], ,);
+    MUX2x1 #(.DATAWIDTH(16)) MUX1({8'h00,e}, {8'h00,d}, g[0], z);
+    MUL #(.DATAWIDTH(16)) MUL1({8'h00,a}, {8'h00,c}, f);
+    SUB #(.DATAWIDTH(16)) SUB1(f, {8'h00,d}, xwire);
     REG #(.DATAWIDTH(16)) REG1(xwire, Clk, Rst, x);
 
 endmodule
