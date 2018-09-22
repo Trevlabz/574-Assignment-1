@@ -1,0 +1,13 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.sim/sim_circuit6/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sim_circuit6/new/circuit6_tb.v,1537659631,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit6.v,,circuit6_tb,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/COMP.v,1536046616,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MOD.v,,COMP,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/DEC.v,1536388403,verilog,,,,DEC,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/INC.v,1536388018,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MUX2x1.v,,INC,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MOD.v,1536387409,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/REG.v,,MOD,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/MUX2x1.v,1536046882,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/COMP.v,,MUX2x1,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/REG.v,1536046072,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/DEC.v,,REG,,,,,,,,
+C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/circuit6.v,1537659825,verilog,,C:/Users/trevl/Documents/GitHub/Assignment_1/assignment_1.srcs/sources_1/new/INC.v,,circuit6,,,,,,,,

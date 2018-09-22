@@ -33,7 +33,7 @@ module circuit6(Clk, Rst, a, b, c, zero, z);
     INC #(.DATAWIDTH(64)) INC1(c, f);                   //f = c + 1
     MOD #(.DATAWIDTH(64)) MOD1(a, c, g);                //g = a % c  
     COMP #(.DATAWIDTH(64)) COMP1(g, zero, , , gEQz);    //gEQz = g == zero
-    MUX2x1 #(.DATAWIDTH(64)) MUX1(e, f, gEQz, zwire);   //zwire = gEQz ? e : f 
+    MUX2x1 #(.DATAWIDTH(64)) MUX1(f, e, gEQz, zwire);   //zwire = gEQz ? e : f 
     REG #(.DATAWIDTH(64)) REG1(zwire, Clk, Rst, z);     //z = zwire
     
 endmodule
