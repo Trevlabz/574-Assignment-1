@@ -1,0 +1,70 @@
+{
+   ExpandedHierarchyInLayout: "",
+   PinnedBlocks: "/DIV1|/DIV2|/MOD1|/REG1|/COMP1|/MUX1|",
+   PinnedPorts: "z|a|b|c|d|zero|clk|rst|",
+   comment_0: "Estimated Critical Path: 220.180ns",
+   comment_1: "Estimated Critical Path: 224.429ns",
+   comment_2: "Estimated Critical Path: 220.180ns",
+   comment_3: "Estimated Critical Path: 7.639ns",
+   comment_4: "Estimated Critical Path: 5.361ns",
+   comment_5: "Estimated Critical Path: 4.090ns",
+   comment_6: "Overall:
+Estimated Critical Path: 241.519ns
+Actual Critical Path: 223.418ns",
+   commentid: "comment_0|comment_1|comment_2|comment_3|comment_4|comment_5|comment_6|",
+   font_comment_0: "10",
+   font_comment_1: "10",
+   font_comment_2: "10",
+   font_comment_3: "10",
+   font_comment_4: "10",
+   font_comment_5: "10",
+   font_comment_6: "10",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port rst -pg 1 -y 340 -defaultsOSRD
+preplace port clk -pg 1 -y 320 -defaultsOSRD
+preplace portBus z -pg 1 -y 320 -defaultsOSRD
+preplace portBus zero -pg 1 -y 530 -defaultsOSRD
+preplace portBus a -pg 1 -y 230 -defaultsOSRD
+preplace portBus b -pg 1 -y 250 -defaultsOSRD
+preplace portBus c -pg 1 -y 60 -defaultsOSRD
+preplace portBus d -pg 1 -y 80 -defaultsOSRD
+preplace inst REG1 -pg 1 -lvl 4 -y 320 -defaultsOSRD
+preplace inst MOD1 -pg 1 -lvl 1 -y 440 -defaultsOSRD
+preplace inst DIV1 -pg 1 -lvl 1 -y 240 -defaultsOSRD
+preplace inst DIV2 -pg 1 -lvl 1 -y 70 -defaultsOSRD
+preplace inst COMP1 -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace inst MUX1 -pg 1 -lvl 3 -y 240 -defaultsOSRD
+preplace netloc zero_1 1 0 2 NJ 530 340
+preplace netloc REG1_q 1 4 1 N
+preplace netloc DIV2_quot 1 1 2 N 70 850
+preplace netloc b_1 1 0 1 -170
+preplace netloc COMP1_eq 1 2 1 850
+preplace netloc rst_1 1 0 4 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc c_1 1 0 1 NJ
+preplace netloc clk_1 1 0 4 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc MOD1_rem 1 1 1 N
+preplace netloc d_1 1 0 1 NJ
+preplace netloc DIV1_quot 1 1 2 N 240 N
+preplace netloc MUX1_d 1 3 1 1200
+preplace netloc a_1 1 0 1 -160
+preplace cgraphic comment_3 place bot 836 -97 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_2 place left 646 213 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_1 place bot 335 -167 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place top 344 192 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_6 place right -210 182 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_5 place right -132 282 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_4 place right -556 214 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 -190 230 760 1100 1520 1640 -top -150 -bot 580
+",
+}
+
+{
+   /comment_0: "comment_0",
+   /comment_1: "comment_1",
+   /comment_2: "comment_2",
+   /comment_3: "comment_3",
+   /comment_4: "comment_4",
+   /comment_5: "comment_5",
+   /comment_6: "comment_6",
+}

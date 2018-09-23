@@ -23,7 +23,7 @@
 module circuit1(Clk, Rst, a, b, c, z, x);
     input Clk, Rst;
     input [7:0] a, b, c;
-    output wire [7:0] z;        //should this be wire?
+    output wire [7:0] z;        
     output wire [15:0] x;
     
     wire [7:0] d, e;
